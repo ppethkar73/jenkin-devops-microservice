@@ -2,17 +2,17 @@
 {
 	agent any
 	stages {
-		stage ('Build') {
+		stage('Build') {
 			steps {
 				echo "Build"
 			}
 		}
-		stage ('Test') {
+		stage('Test') {
 			steps {
 				echo "Test"
 			}
 		}
-		stage ('Integration Test') {
+		stage('Integration Test') {
 			steps {
 				echo "Integration Test"
 			}
