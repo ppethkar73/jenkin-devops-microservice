@@ -12,8 +12,8 @@ pipeline {
 		stage('Checkout') {
 			steps {
 				sh 'mvn --version'
-				echo "MYJAVA_HOME - $env.JAVA_HOME"
-				sh 'ls -al /opt/java/openjdk'
+				//echo "MYJAVA_HOME - $env.JAVA_HOME"
+				//sh 'ls -al /opt/java/openjdk'
 				echo "Build"
 				echo "Build Number - $env.BUILD_NUMBER"
 				echo "Build ID - $env.BUILD_ID"
