@@ -2,9 +2,6 @@
 pipeline {
 	// agent any
 	agent { docker { image 'maven:3.6.3'} 
-	tools {
-			jdk ‘jdk1.8’
-		}
 	}
 	// environment {
 	// 	dockerHome = tool 'myDocker'
@@ -15,6 +12,7 @@ pipeline {
 		stage('Checkout') {
 			steps {
 				sh 'mvn --version'
+				echo "MYJAVA_HOME - $env.JAVA_HOME"
 				// sh 'docker version'
 				echo "Build"
 				echo "Build Number - $env.BUILD_NUMBER"
