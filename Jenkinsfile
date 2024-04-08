@@ -13,7 +13,7 @@ pipeline {
 			steps {
 				sh 'mvn --version'
 				echo "MYJAVA_HOME - $env.JAVA_HOME"
-				// sh 'docker version'
+				sh 'ls -al $env.JAVA_HOME'
 				echo "Build"
 				echo "Build Number - $env.BUILD_NUMBER"
 				echo "Build ID - $env.BUILD_ID"
